@@ -2,9 +2,9 @@
 
 namespace Drfraker\Snipe;
 
-use DustinFraker\SnipeMigrations\Console\CreateSqliteDb;
-use DustinFraker\SnipeMigrations\Console\DumpDatabase;
 use Illuminate\Support\ServiceProvider;
+use Drfraker\Snipe\Console\DumpDatabase;
+use Drfraker\Snipe\Console\CreateSqliteDb;
 
 class SnipeServiceProvider extends ServiceProvider
 {
@@ -31,15 +31,6 @@ class SnipeServiceProvider extends ServiceProvider
 
     }
 
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-    }
-    
     /**
      * Console-specific booting.
      *
