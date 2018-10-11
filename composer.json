@@ -1,0 +1,48 @@
+{
+  "name": "drfraker/snipe",
+  "description": "A package for ultra fast testing in laravel apps.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dustin Fraker",
+      "email": "drfraker@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "homepage": "https://github.com/drfraker/snipe",
+  "keywords": [
+    "Laravel",
+    "Snipe Migrations"
+  ],
+  "repositories": {
+    "mysql2sqlite": {
+      "type": "package",
+      "package": {
+        "name": "dumblob/mysql2sqlite",
+        "version": "1.0.0",
+        "source": {
+          "url": "https://github.com/dumblob/mysql2sqlite",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  },
+  "require-dev": {
+    "illuminate/support": "~5",
+    "dumblob/mysql2sqlite": "*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Drfraker\\Snipe\\SnipeServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Drfraker\\Snipe\\": "packages/drfraker/snipe/src/"
+    }
+  }
+}
