@@ -28,20 +28,19 @@
       }
     }
   },
-  "require-dev": {
-    "illuminate/support": "~5",
+  "require": {
     "dumblob/mysql2sqlite": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drfraker\\Snipe\\": "src"
+    }
   },
   "extra": {
     "laravel": {
       "providers": [
         "Drfraker\\Snipe\\SnipeServiceProvider"
       ]
-    }
-  },
-  "autoload": {
-    "psr-4": {
-      "Drfraker\\Snipe\\": "src"
     }
   }
 }
