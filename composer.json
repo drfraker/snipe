@@ -41,8 +41,7 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "app/",
-      "Drfraker\\Snipe\\": "packages/drfraker/snipe/src/"
+      "Drfraker\\Snipe\\": "src"
     }
   }
 }
