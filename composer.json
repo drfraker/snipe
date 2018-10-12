@@ -14,8 +14,8 @@
     "Laravel",
     "Snipe Migrations"
   ],
-  "repositories": {
-    "mysql2sqlite": {
+  "repositories": [
+    {
       "type": "package",
       "package": {
         "name": "dumblob/mysql2sqlite",
@@ -27,7 +27,7 @@
         }
       }
     }
-  },
+  ],
   "require": {
     "dumblob/mysql2sqlite": "master"
   },
