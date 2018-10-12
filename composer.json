@@ -29,7 +29,7 @@
     }
   },
   "require": {
-    "dumblob/mysql2sqlite": "1.0.0"
+    "dumblob/mysql2sqlite": "master"
   },
   "autoload": {
     "psr-4": {
