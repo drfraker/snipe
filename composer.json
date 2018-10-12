@@ -33,13 +33,13 @@
   },
   "autoload": {
     "psr-4": {
-      "\\Drfraker\\Snipe\\": "src/"
+      "\\Drfraker\\Snipe\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "\\Drfraker\\Snipe\\SnipeServiceProvider"
+        "Drfraker\\Snipe\\SnipeServiceProvider"
       ]
     }
   }
